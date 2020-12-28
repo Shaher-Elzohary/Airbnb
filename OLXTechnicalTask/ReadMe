@@ -1,0 +1,17 @@
+Airbnb is an Automated tests for Airbnb search testing, more filters testing and map validation
+
+selenium version 3.141.59
+apache.poi version 4.1.2
+maven version 3.1.0
+
+For executing the test cases
+	-goto /OLXTechnicalTask/TestNG.xml run as TestNG test
+
+ReadExcelFile class created in the following path for parsing excel file using AppachePOI /src/test/java/com/google/selenium/test/
+	 Reading data from \\src\\main\\UserData.xlsx
+	 
+Test reports generated in test-output
+
+Framework Used
+-Data Driven Framework in AirbnbSearchValidation to get the data of locations and check in/out after how many days
+-Module Based Testing Framework modules are separated in such a way that the changes made in any sections of the test script doesn’t yield affects other scripts.

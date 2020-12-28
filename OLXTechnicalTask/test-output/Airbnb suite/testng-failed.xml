@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Airbnb suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Airbnb Map test(failed)">
+    <classes>
+      <class name="com.google.selenium.test.AirbnbMapValidation">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="validateItemOnMap"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- com.google.selenium.test.AirbnbMapValidation -->
+    </classes>
+  </test> <!-- Airbnb Map test(failed) -->
+</suite> <!-- Failed suite [Airbnb suite] -->

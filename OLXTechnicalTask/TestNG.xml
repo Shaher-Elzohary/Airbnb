@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Airbnb suite">
+	<test name="Airbnb Search test" >
+       <classes> 
+          <class name="com.google.selenium.test.AirbnbSearchValidation" />
+       </classes>
+	</test>
+	<test name="Airbnb Extra Search test" >
+		<groups>
+		   <dependencies>
+			   <group depends-on= "com.google.selenium.test.AirbnbSearchValidation" name= "com.google.selenium.test.AirbnbExtraSearchValidation"></group>
+		   </dependencies>
+		</groups>
+       <classes> 
+          <class name="com.google.selenium.test.AirbnbExtraSearchValidation" />
+       </classes>
+	</test>
+	<test name="Airbnb Map test" >
+		<groups>
+		   <dependencies>
+			   <group depends-on= "com.google.selenium.test.AirbnbSearchValidation" name= "com.google.selenium.test.AirbnbMapValidation"></group>
+		   </dependencies>
+		</groups>
+       <classes> 
+          <class name="com.google.selenium.test.AirbnbMapValidation" />
+       </classes>
+	</test>
+</suite>
